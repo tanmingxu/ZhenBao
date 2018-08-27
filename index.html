@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>文章列表</title>
+    <meta charset="utf-8" />
+    <style>
+        .TypeSelection .border-rt{
+            border-right:none;
+        }
+        .TypeSelection{
+            width:600px;
+            height:32px;
+            float:left;
+        }
+         .TypeSelection li{
+             float:left;
+             width:120px;
+             height:100%;
+             line-height:32px;
+             border:1px solid #bbb;
+             text-align:center;
+             font-size:14px;
+             cursor: pointer;
+         }
+        .TypeSelection .click_color {
+            background-color: #008cea;
+            border: 1px solid #008cea;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fakeloader"></div>
+    <div id="PagiNation" style="text-align:center">
+        <table style="width:98%;margin-left:10px" border="0">
+            <tbody>
+                <tr>
+                    <td class="width1">
+                        <!--<div id="ExportExcel">导出到EXCEL</div>-->
+                    </td>
+                    <td class="width2">
+                        <ul class="pagination" style="margin:0;">
+                            <li><a id="allPages" class="pointer"></a></li>
+                            <li><a id="top" class="pointer">首页</a></li>
+                            <li><a id="previous" class="pointer">上一页</a></li>
+                            <li class="active"><a class="setNumber">1</a></li>
+                            <li><a class="setNumber">2</a></li>
+                            <li><a class="setNumber">3</a></li>
+                            <li><a class="setNumber">4</a></li>
+                            <li><a class="setNumber">5</a></li>
+                            <li><a class="setNumber">6</a></li>
+                            <li><a class="setNumber">7</a></li>
+                            <li><a class="setNumber">8</a></li>
+                            <li><a class="setNumber">9</a></li>
+                            <li><a class="setNumber">10</a></li>
+                            <li><a id="next" class="pointer">下一页</a></li>
+                            <li><a id="last" class="pointer">尾页</a></li>
+                            <li><span style="margin-left:10px;border:hidden">去</span></li>
+                            <li><input id="pages" class="pages" type="text" /></li>
+                            <li><span style="border:hidden;margin-left:1px">页</span></li>
+                            <li><input id="GO" class="GO" type="button" value="GO" /></li>
+                        </ul>
+                    </td>
+                    <td class="width3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
